@@ -11444,10 +11444,13 @@ header.masthead .masthead-subheading {
 }
 header.masthead .masthead-heading {
   font-size: 3.25rem;
-  font-weight: 700;
+  font-weight: 200;
   line-height: 3.25rem;
   margin-bottom: 2rem;
-  font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  /**font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  **/
+  font-family: 'Lucida Handwriting';
+  font-style: italic;
 }
 
 @media (min-width: 768px) {
