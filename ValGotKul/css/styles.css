@@ -11303,6 +11303,25 @@ p {
 .page-section {
   padding: 6rem 0;
 }
+
+#about {
+  background-image: url("../images/background4.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio {
+  background-image: url("../images/background3.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#team {
+  background-image: url("../images/background2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
 .page-section h2.section-heading, .page-section .section-heading.h2 {
   font-size: 2.5rem;
   margin-top: 0;
