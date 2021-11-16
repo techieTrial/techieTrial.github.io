@@ -10,6 +10,7 @@
         <link rel="icon" type="image/x-icon" href="images/website_icon.png" />
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -30,10 +31,40 @@
         <header class="masthead">
             <div class="container">
                 <div class="masthead-subheading">Welcome To The Wedding Of</div>
+                <!--
+                    Lucida Handwriting
+                    cursive
+                -->
                 <div class="masthead-heading text-uppercase" style="font-family:Lucida Handwriting">NAKUL JOSHI <br>&<br> VALLARI DALVI</div>
                 <a class="btn btn-primary btn-xl text-uppercase" href="#about">Explore Events</a>
             </div>
         </header>
+        <!-- Countdown-->
+        <section class="page-section" id="services">
+            <div class="container">
+                <div class="text-center">
+                    <h2 class="section-heading text-uppercase">To our friends and family:</h2>
+                    <h3 class="section-subheading text-muted">We're so excited to celebrate our wedding with you. Find all the details you need to know about our big day here.</h3>
+                    <div class="py-5">
+                        <div class="row">
+                          <div class="col-lg-8 mx-auto">
+                            <!-- Countdown-->
+                            <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
+                              <p class="mb-4 font-weight-bold text-uppercase">The countdown until our forever is on (19th December 2021,<br>11:45 AM)</p>
+                                <div id="clock-b countdown" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="days"></span> Day(s)</div>
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="minutes"></span> Hour(s)</div>
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="hours"></span> Minute(s)</div>
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="seconds"></span> Second(s)</div>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    <h3 class="section-subheading text-muted">We're thrilled to celebrate with you</h3>
+                </div>
+            </div>
+        </section>
         <!-- Events-->
         <section class="page-section" id="about">
             <div class="container">
