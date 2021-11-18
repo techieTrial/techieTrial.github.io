@@ -11,6 +11,7 @@
         <!-- Font Awesome icons (free version)-->
         <script src="https://use.fontawesome.com/releases/v5.15.4/js/all.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -28,15 +29,15 @@
             </div>
         </nav>
         <!-- Masthead-->
-        <header class="masthead">
+        <header class="masthead w3-animate-opacity">
             <div class="container">
                 <div class="masthead-subheading">Welcome To The Wedding Of</div>
                 <!--
                     Lucida Handwriting
                     cursive
                 -->
-                <div class="masthead-heading text-uppercase" style="font-family:Lucida Handwriting">NAKUL JOSHI <br>&<br> VALLARI DALVI</div>
-                <a class="btn btn-primary btn-xl text-uppercase" href="#about">Explore Events</a>
+                <div class="masthead-heading text-uppercase">NAKUL JOSHI <br>&<br> VALLARI DALVI</div>
+                <a class="btn btn-primary btn-xl text-uppercase" id="exploreButton" href="#about">Explore Events</a>
             </div>
         </header>
         <!-- Countdown-->
@@ -50,11 +51,11 @@
                           <div class="col-lg-8 mx-auto">
                             <!-- Countdown-->
                             <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-                              <p class="mb-4 font-weight-bold text-uppercase">The countdown until our forever is on (19th December 2021,<br>11:45 AM)</p>
+                              <p class="mb-4 font-weight-bold text-uppercase">The countdown until our forever is on</p>
                                 <div id="clock-b countdown" class="countdown-circles d-flex flex-wrap justify-content-center pt-4">
                                   <div class="holder m-2"><span class="h1 font-weight-bold" id="days"></span> Day(s)</div>
-                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="minutes"></span> Hour(s)</div>
-                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="hours"></span> Minute(s)</div>
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="hours"></span> Hour(s)</div>
+                                  <div class="holder m-2"><span class="h1 font-weight-bold" id="minutes"></span> Minute(s)</div>
                                   <div class="holder m-2"><span class="h1 font-weight-bold" id="seconds"></span> Second(s)</div>
                                 </div>
                             </div>
@@ -65,6 +66,25 @@
                 </div>
             </div>
         </section>
+        <div class="square-wrapper">
+        <!--Our Story-->
+        <div class="ourStory square">
+            <div class="row" style="padding: 20px 20px 20px 20px;">
+                <div class="col-lg-6 col-sm-12 mb-12" style="padding: 10px 10px 10px 10px; text-align: center;">
+                    <!-- Portfolio item 3-->
+                        <img class="img-fluid" src="images/coverPic1.jpeg" alt="..." />
+                </div>
+                <div class="col-lg-6 col-sm-12 mb-12">
+                    <h2 class="section-heading text-uppercase" style="text-align: center; font-style: italic;">OUR STORY</h2>
+                    <h3 class="section-subheading text-muted " style="font-style: italic;">Whatever our souls are made of, Nakul and Vallari’s are the same.<br><br>
+ 
+                        Living on different coasts of the country, totally unaware of what was to happen next, Nakul and Vallari were introduced to each other by a friend. And the next thing you know, numbers were exchanged, and messages were sent. And then in a few days, they spoke to each other for the first time and that was all that they needed. That one phone call was their destiny call. When they hung up that call after hours of chit chat, they both knew that “This was it”.
+                        They had found each other without even looking.
+                        They had the keys to each other’s hearts and felt safe to open the locks and unleash their truest selves and be completely and honestly who they are. They unveil the best in each other and make life come to life.</h3>
+                </div>
+            </div>
+        </div>
+        </div>
         <!-- Events-->
         <section class="page-section" id="about">
             <div class="container">
@@ -140,15 +160,28 @@
                     <h3 class="section-subheading text-muted">NAKUL JOSHI & VALLARI DALVI</h3>
                 </div>
                 <div class="row">
-                    <div class="col-lg-12 col-sm-12 mb-12">
+                    <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
                         <!-- Portfolio item 3-->
                         <div class="portfolio-item">
-                            <a class="portfolio-link" data-bs-toggle="modal" href="#image3">
-                                <div class="portfolio-hover">
-                                    <div class="portfolio-hover-content"><i class="fas fa-plus fa-3x"></i></div>
-                                </div>
-                                <img class="img-fluid" src="images/image3.jpeg" alt="..." />
-                            </a>
+                            <img class="img-fluid" src="images/img3.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="images/img2.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="images/img3.jpeg" alt="..." />
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
+                        <!-- Portfolio item 3-->
+                        <div class="portfolio-item">
+                            <img class="img-fluid" src="images/img2.jpeg" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -157,7 +190,7 @@
         <!-- Team-->
         <section class="page-section bg-light" id="team">
             <div class="container">
-                <div class="row">
+                <!-- <div class="row">
                     <div class="col-lg-6">
                         <div class="team-member">
                             <img class="mx-auto rounded-circle" src="images/Nakul_Image.png" alt="..." />
@@ -172,7 +205,7 @@
                             <p class="text-muted">BRIDE</p>
                         </div>
                     </div>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-lg-8 mx-auto text-center"><p class="large text-muted">BLESSINGS ARE YOUR GREATEST GIFT AND THE ONLY ONE WE REQUEST!</p></div>
                 </div>
@@ -327,6 +360,11 @@
 
             Reception
             https://maps.app.goo.gl/hSEnVpQnigtt9KGa7
+        -->
+
+        <!--
+            Background Cover Img
+            https://i.imgur.com/xnh5x47.jpg
         -->
     </body>
 </html>
