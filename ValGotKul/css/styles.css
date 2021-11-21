@@ -2286,7 +2286,7 @@ header.masthead {
 	padding-bottom: 6rem;
 	text-align: center;
 	color: #fff;
-	background-image: url(../images/trial3.jpeg);
+	background-image: url(../images/CoverPic.jpeg);
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: center center;
@@ -2757,4 +2757,10 @@ section#contact .section-heading {
 
 .portfolio-item {
 	box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.buttonNew {
+	background: orange;
+	background: -webkit-linear-gradient(to right, palevioletred, orange);
+	background: linear-gradient(to right, palevioletred, orange);
 }

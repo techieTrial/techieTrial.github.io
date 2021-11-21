@@ -18,6 +18,11 @@
         <link href='https://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet'>
         <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
         <!-- Google fonts-->
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
         <link href="https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700" rel="stylesheet" type="text/css" />
@@ -112,10 +117,13 @@
                                 <h4 class="subheading">SANGEET</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">4:30PM ONWARDS<br>WOODSTOCK VILLA RESORT<br>THANE</p></div>
-                            <!-- <a data-bs-toggle="modal" href="#eventSangeet">INVITATION</a> -->
                             <a href="https://maps.app.goo.gl/69xmx8r51unxJYEY6">
                                     <i class="material-icons" style="font-size:15px;color:orange">place</i>LOCATION
-                            </a>    
+                            </a>
+                            <span style="margin-left: 20px;">|</span>  
+                            <a data-bs-toggle="modal" href="#eventSangeet" style="margin-left: 20px;">
+                                <i class="fas fa-envelope-open" style="font-size:15px;color:orange;"></i> INVITE
+                            </a>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -144,6 +152,10 @@
                             <a href="https://maps.app.goo.gl/dfwHMe6gScLR4Dn89">
                                 <i class="material-icons" style="font-size:15px;color:orange">place</i>LOCATION
                             </a>
+                            <span style="margin-left: 20px;">|</span>  
+                            <a data-bs-toggle="modal" href="#eventWedding" style="margin-left: 20px;">
+                                <i class="fas fa-envelope-open" style="font-size:15px;color:orange;"></i> INVITE
+                            </a>
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -154,10 +166,13 @@
                                 <h4 class="subheading">RECEPTION</h4>
                             </div>
                             <div class="timeline-body"><p class="text-muted">6:30PM onwards<br>GHARKUL LAWNS<br>PUNE</p></div>
-                            <!-- <a data-bs-toggle="modal" href="#eventSangeet">INVITATION</a> -->
                             <a href="https://maps.app.goo.gl/hSEnVpQnigtt9KGa7">
-                                <i class="material-icons" style="font-size:15px;color:orange">place</i>LOCATION
-                            </a> 
+                                <i class="material-icons" style="font-size:15px;color:orange">place</i> LOCATION
+                            </a>
+                            <span style="margin-left: 20px;">|</span>  
+                            <a data-bs-toggle="modal" href="#eventReception" style="margin-left: 20px;">
+                                <i class="fas fa-envelope-open" style="font-size:15px;color:orange;"></i> INVITE
+                            </a>  
                         </div>
                     </li>
                     <li class="timeline-inverted">
@@ -181,7 +196,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
                         <div class="portfolio-item">
-                            <img class="img-fluid" src="images/img2T.jpeg" alt="..." />
+                            <img class="img-fluid" src="images/img2.jpeg" alt="..." />
                         </div>
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
@@ -191,7 +206,7 @@
                     </div>
                     <div class="col-lg-3 col-sm-6 mb-6" style="padding: 15px;">
                         <div class="portfolio-item">
-                            <img class="img-fluid" src="images/img4T.jpeg" alt="..." />
+                            <img class="img-fluid" src="images/img4.jpeg" alt="..." />
                         </div>
                     </div>
                 </div>
@@ -214,6 +229,40 @@
                 </div>
             </div>
         </footer>
+        <!-- Event Modals -->>
+        <div class="portfolio-modal modal fade" id="eventWedding" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <img class="img-fluid d-block mx-auto" src="images/WeddingInvite.png" alt="..."/>
+            </div>
+            <center>
+            <button class="btn btn-primary btn-xl text-uppercase buttonNew" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-times me-1"></i>
+                Close Invite
+            </button>
+            </center>
+        </div>
+        <div class="portfolio-modal modal fade" id="eventSangeet" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <img class="img-fluid d-block mx-auto" src="images/SangeetInvite.png" alt="..."/>
+            </div>
+            <center>
+            <button class="btn btn-primary btn-xl text-uppercase buttonNew" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-times me-1"></i>
+                Close Invite
+            </button>
+            </center>
+        </div>
+        <div class="portfolio-modal modal fade" id="eventReception" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-dialog">
+                <img class="img-fluid d-block mx-auto" src="images/ReceptionInvite.png" alt="..."/>
+            </div>
+            <center>
+            <button class="btn btn-primary btn-xl text-uppercase buttonNew" data-bs-dismiss="modal" type="button">
+                <i class="fas fa-times me-1"></i>
+                Close Invite
+            </button>
+            </center>
+        </div>
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
