@@ -64,7 +64,13 @@ var x = setInterval(function() {
     
   // Find the distance between now and the count down date
   var distance = countDownDate - now;
-    
+  // If the count down is over, write some text 
+  if (distance < 0) {
+    clearInterval(x);
+    var div = document.getElementById("divCountdown");
+    div.innerHTML = "! HAPPILY MARRIED ! <br><br> CONGRATULATIONS TO <br><br> NAKUL JOSHI <br>&<br> VALLARI DALVI <br><br> MARRIAGE DATE :<br> 19th DECEMBER 2021";
+  }
+  else {  
   // Time calculations for days, hours, minutes and seconds
   var days = Math.floor(distance / (1000 * 60 * 60 * 24));
   var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
@@ -75,11 +81,6 @@ var x = setInterval(function() {
   document.getElementById("hours").innerHTML = hours;
   document.getElementById("minutes").innerHTML = minutes;
   document.getElementById("seconds").innerHTML = seconds; 
-    
-  // If the count down is over, write some text 
-  if (distance < 0) {
-    clearInterval(x);
-    document.getElementById("countdown").innerHTML = "Happily Married";
   }
 }, 1000);
 
